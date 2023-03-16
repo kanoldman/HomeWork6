@@ -1,0 +1,283 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ul[class],
+ol[class] {
+  padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+*/
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+article > * + * {
+  margin-top: 1em;
+}
+
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/lato-v23-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+		  url('../fonts/lato-v23-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+ }
+ /* lato-900 - latin */
+ @font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 900;
+	src: url('../fonts/lato-v23-latin-900.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+		  url('../fonts/lato-v23-latin-900.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+ }
+ html{
+	box-sizing: border-box;
+ }
+ *,*::before, *::after{
+	box-sizing: inherit;
+ }
+ 
+ img{
+	max-width: 100%;
+	height: auto;
+ }
+ /* Header style start*/
+	
+ .wrapper{
+	max-width: 1440px;
+	top: 0;
+	left: 0;
+	margin: 0 auto;
+	padding: 0 15px;	
+ }
+ 
+ .header__wrapper {
+	display: grid;
+	grid-template: repeat(2, 240px) / repeat(3, 480px);
+	gap: 1px 1px;
+	padding: 0 100px;
+	}
+
+
+.box__column{
+	grid-column: span 1;
+	text-align: left;
+	}
+.title__1, .title__2,
+.title__3, .title__4,
+.title__5, .title__6{
+font-family: 'Lato';
+font-weight: normal;
+font-size: 28px;
+line-height: 33px;
+letter-spacing: -0.03em;
+color: #22356F;
+margin-top: 55px;
+margin-bottom: 28px;
+	
+}
+.text__info{
+	max-width: 298px;
+font-size: 16px;
+line-height: 25px;
+letter-spacing: -0.03em;
+color: rgba(34, 53, 111, 0.5);
+	}
+/* Header style end*/
+
+/* Smile style start*/
+.smile{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1440px;
+	margin: 0 auto;
+	height: 1180px;
+	}
+.smile__text {
+	
+	position: absolute;
+	width: 960px;
+	height: 800px;
+	background: #22356F;
+}
+.smile__text-all{
+	margin-top: 103px;
+	margin-left: 180px;
+}
+.contact__us{
+	color: #fff;
+	font-size: 16px;
+	
+}
+.ready{
+	color: #fff;
+	font-size: 64px;
+	font-style: bold;
+	margin-top: 230px;
+	}
+.desk{
+	width: 500px;
+	height: 200px;
+	margin-top: 75px;
+}
+.desk__take{
+	color: #fff;
+	font-size: 36px;
+	}
+	.help__now{
+		font-size: 16px;
+		color: #62D0DF;
+		letter-spacing: 10%;
+		margin-bottom: 42px;
+		}
+.smile__man {
+	position: relative;
+	left: 960px;
+	max-height: 800px;
+	}
+.smile__woman {
+	display: flex;
+	max-width: 1440px;
+	max-height: 380px;
+	position: absolute;
+	top: 1281px;
+}
+
+.smile__menu {
+	display: flex;
+	margin-top: 98px;
+	font-size: bold;
+	font-size: 14px;
+	color: #22356F;
+	}
+.block__menu{
+	display: flex;
+	flex-direction: column;
+}
+.info {
+	width: 240px;
+	height: 48px;
+	margin-left: 68px;
+	
+}
+
+.enfold__health {
+	width: 240px;
+	height: 48px;
+	margin-left: 23px;
+
+}
+
+.office__hours {
+	width: 240px;
+	height: 48px;
+	margin-left: 23px;
+}
+.some__info {
+	width: 190px;
+	height: 115px;
+	margin-left: 68px;
+	
+}
+.health {
+	width: 150px;
+	height: 115px;
+	margin-left: 23px;
+}
+.hours {
+	width: 120px;
+	height: 115px;
+	margin-left: 23px;
+}
+p{
+font-size: 14px;
+line-height: 140%;
+letter-spacing: 1%;
+color: rgba(34, 53, 111, 0.5)
+}
+h3{
+	font-size: 14px;
+	color: #22356F;
+}
+/* Smile style end*/
+
+/*Footer style start*/
+.footer{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1440px;
+	height: 80px;
+	left: 0;
+	margin: 0 auto;
+	background-color: #62D0DF;
+}
+.footer__talk{
+	margin-top: 32px;
+	margin-left: 194px;
+}
+.talk{
+	color: #fff;
+	font-size: 14px;
+	font-style: bold;
+	line-height: 65%;
+}
+/*Footer style end*/
+
+
+
+ 
+ 
